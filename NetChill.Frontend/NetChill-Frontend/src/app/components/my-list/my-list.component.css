@@ -1,0 +1,5 @@
+.card-body {
+    background-image: url("../../../assets/bg4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

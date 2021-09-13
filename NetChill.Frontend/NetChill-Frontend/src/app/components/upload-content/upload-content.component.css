@@ -27,3 +27,8 @@
     background-attachment: fixed;
     background-size: cover;
 }
+
+label {
+    color: white;
+}
+

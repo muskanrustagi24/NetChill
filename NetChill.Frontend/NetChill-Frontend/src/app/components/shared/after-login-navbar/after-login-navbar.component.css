@@ -21,12 +21,16 @@
     color: cyan;
 }
 
-#logout {
+#logout, #user {
     position: relative;
-    right: -870px;
+    right: -670px;
     border: white solid 1px;
     font-weight: bold;
     color: white;
+}
+
+#user {
+    color: red;
 }
 
 #logout:hover{

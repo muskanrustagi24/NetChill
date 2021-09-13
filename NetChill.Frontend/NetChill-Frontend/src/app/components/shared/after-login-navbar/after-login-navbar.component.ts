@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { userDataService } from 'src/app/data-service/userData-service.component';
 import { IUser } from 'src/app/models/IUser';
 
 @Component({
@@ -8,9 +9,11 @@ import { IUser } from 'src/app/models/IUser';
 })
 export class AfterLoginNavbarComponent implements OnInit {
   pageTitle : string = 'NetChill';
-  constructor() { }
+  FullName !: string;
+  constructor(private userDataService : userDataService) { }
 
   ngOnInit(): void {
+    this.FullName = this.userDataService.loggedInUser.FullName;
   }
 
 }

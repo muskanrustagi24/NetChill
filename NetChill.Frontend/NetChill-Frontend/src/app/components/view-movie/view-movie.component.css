@@ -7,8 +7,24 @@
 button {
     width: 200px;
     margin-left: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
 }
 
 h5, p, h4{
     margin-left: 20px;
+    color: white;
+}
+
+#card {
+    background-image: url("../../../assets/bg4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

@@ -1,0 +1,8 @@
+<div class="row movies-wrapper" *ngIf='movies.length'>
+    <section class="movies" *ngFor='let movie of movies'>
+        <div>
+            <img [src]="movie.PosterPath" alt="#" style="height: 15rem; width: 12rem;">
+            <h5>{{movie.Name}}</h5>
+        </div>
+    </section>
+</div>

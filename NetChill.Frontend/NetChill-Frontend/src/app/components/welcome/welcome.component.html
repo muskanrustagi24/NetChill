@@ -1,0 +1,27 @@
+<app-before-login-navbar></app-before-login-navbar>
+<div class="row">
+    <div class="row">
+      <div class="card mt-4" id="card-inside">
+        <div class="card-header">Featured</div>
+          <div class="card-body text-center">
+             <app-welcome-movies [getValue] = "0"></app-welcome-movies>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card mt-4" id="card-inside">
+        <div class="card-header">Upcoming</div>
+          <div class="card-body text-center">
+             <app-welcome-movies [getValue] = "2"></app-welcome-movies>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card mt-4" id="card-inside">
+        <div class="card-header">New Releases</div>
+          <div class="card-body text-center ">
+             <app-welcome-movies [getValue] = "1"></app-welcome-movies>
+          </div>
+      </div>
+    </div>
+</div>

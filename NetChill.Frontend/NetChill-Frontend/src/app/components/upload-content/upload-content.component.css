@@ -1,0 +1,29 @@
+.form-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.right-side-form>div{
+    margin-bottom: 1rem;
+}
+
+.img-container{
+    margin: auto;
+    margin-top: 2rem;
+    width: 20rem;
+    text-align: center;
+    padding-top: 25%;
+    color: #fff;
+    height: 22rem;
+    background-color: rgb(3, 14, 173);
+} 
+#image{
+    height: 22rem;
+    width: 20rem;
+    margin-bottom: 10rem;
+    background-attachment: fixed;
+    background-size: cover;
+}

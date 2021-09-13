@@ -1,0 +1,53 @@
+<app-after-login-navbar></app-after-login-navbar>
+<div class="card text-center mt-4">
+    <app-movies-navbar></app-movies-navbar>
+    <div class="card-body">
+        <form class="form-container">
+            <div class="left-side-form">
+                <div class="img-container">
+                    <p>Image preview Here</p>
+                    <img [src]="imgURL" *ngIf="imgURL" id="image">
+                </div>
+                <input #file type="file" accept='image/*' (change)="preview(file.files)" />
+            </div>
+            <div class="right-side-form">
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" name="Name" ngModel required>
+                </div>
+                <div class="form-group">
+                    <label for="Category">Category</label>
+                    <input type="text" class="form-control" name="Category" ngModel required>
+                </div>
+                <div class="form-group">
+                    <label for="Year">Year of Release</label>
+                    <input type="text" class="form-control" name="YearOfRelease" ngModel required>
+                </div>
+                <div class="form-group">
+                    <label for="Availability">Availability Starts</label>
+                    <input type="date" class="form-control" name="AvailabilityStarts" ngModel required>
+                </div>
+                <div class="form-group">
+                    <label for="Description">Description</label>
+                    <textarea cols="75" rows="5" name="Description" ngModel required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="IsFeatured">Is Featured</label>
+                    <input type="checkbox" style="margin-left: 1rem;" name="IsFeatured" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="Content Path" style="margin-right: 2rem;">Content Path</label>
+                    <input type="file" name="ContentPath" ngModel required>
+                </div>
+                <br>
+                <button type="submit">Add Movie</button>
+            </div>
+        </form>
+    
+    </div>
+</div>
+    
+ 
+  
+<span style="color:red;" *ngIf="message">{{message}}</span>
+

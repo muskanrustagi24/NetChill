@@ -1,0 +1,30 @@
+<app-before-login-navbar></app-before-login-navbar>
+<div class="row">
+    <div class="col"></div>
+    <div class="col">
+        <h2 style="margin-top: 30px;">{{title}}</h2>
+        <div class="alert alert-danger" *ngIf = "isInvalid">Either your credentials are wrong or your subscription has been revoked. Please try again.</div>
+        <form class="form-class" #signInForm="ngForm" (ngSubmit)="onSubmit(signInForm)">
+            <input type="hidden" name="Id" ngModel>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email :</label>
+                <input type="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    name="Email" ngModel required>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password :</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="Password" ngModel required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="switchCheckbox()" ngModel>
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <br>
+            <br>
+            <div>Not a member? <a style="text-decoration:none;" routerLink='/signup'>Sign Up</a></div>
+        </form>
+    </div>
+    <div class="col"></div>
+</div>

@@ -1,0 +1,13 @@
+<form class="example" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2" [(ngModel)]='listFilter'/>
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<div class="row movies-wrapper mt-5" *ngIf='movies.length'>
+  <section class="movies" *ngFor='let movie of filteredMovies'>
+      <div>
+        <img [src]="movie.PosterPath" alt="#" style="height: 15rem; width: 12rem;">
+        <h5>{{movie.Name}}</h5>
+        <a class="btn btn-primary" [routerLink]="['/movies', movie.Id]" >Watch Now</a>
+      </div>
+   </section>
+</div>

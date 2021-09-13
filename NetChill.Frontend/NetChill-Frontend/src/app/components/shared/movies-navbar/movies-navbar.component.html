@@ -1,0 +1,26 @@
+<div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="true" [routerLink] = "['/movies']"  id="home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "['/featured']" id="featured">Featured</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "['/newreleases']" id="newReleases">New Releases</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "['/upcoming']" id="upcoming">Upcoming</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "['/mylist' , userid]" id="myList">My List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "['/upload']" id="uploadContent" *ngIf="isAdmin" >Upload Content</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink] = "['/revoke']" *ngIf="isAdmin" id="revokeSubscription">Revoke Subscription</a>
+        </li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>

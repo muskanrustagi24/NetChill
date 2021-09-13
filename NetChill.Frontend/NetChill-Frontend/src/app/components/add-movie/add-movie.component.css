@@ -20,7 +20,7 @@
     padding-top: 25%;
     color: #fff;
     height: 22rem;
-    background-color: rgb(3, 14, 173);
+    background-color: gray;
 } 
 
 .left-side-form {
@@ -31,4 +31,14 @@
 button {
     position: relative;
     left:-40px;
+}
+
+#card-body {
+    background-image: url("../../../assets/bg4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+label {
+    color: white;
 }

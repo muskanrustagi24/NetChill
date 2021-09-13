@@ -1,10 +1,16 @@
 .card-header {
     font-weight: bold;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 13pt;
 }
 
 #card-inside {
     position: relative;
     right: -15px;
+}
+
+.card-body {
+    background-image: url("../../../assets/bg4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

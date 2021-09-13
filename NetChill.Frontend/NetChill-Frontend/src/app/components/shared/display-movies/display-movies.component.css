@@ -39,3 +39,19 @@ form.example::after {
     clear: both;
     display: table;
 }
+
+h5 {
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color:black;
+    color:white;
+    font-weight: bold;
+}
